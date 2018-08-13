@@ -1,0 +1,7 @@
+node_modules
+env.sh
+
+# Google Dialog Flow Key
+GCSDialogFlowSpherical-rune-213217.json
+GoogleCalCredentials.json
+token.json
