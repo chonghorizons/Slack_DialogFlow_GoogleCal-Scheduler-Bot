@@ -3,6 +3,6 @@ env.sh
 
 # Google Dialog Flow Key
 GCSDHorHochoBot.json
-GCS*.json
 GoogleCalCredentials.json
+G*.json
 token.json
