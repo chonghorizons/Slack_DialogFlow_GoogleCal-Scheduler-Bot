@@ -1,0 +1,81 @@
+{
+  "id": "726b52a6-3fec-4e5f-8b0d-f1455176686d",
+  "name": "alarm.change - context:alarm-change",
+  "auto": true,
+  "contexts": [
+    "alarm-change"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.change",
+      "affectedContexts": [
+        {
+          "name": "alarmchange-contextalarm-change-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9c1ffcc1-d439-439c-ab15-de5847041d16",
+          "dataType": "@sys.time",
+          "name": "time-from",
+          "value": "$time-from"
+        },
+        {
+          "id": "edd141dd-7d5e-4e49-bb03-67d7909cabac",
+          "dataType": "@sys.time",
+          "name": "time-to",
+          "value": "$time-to"
+        },
+        {
+          "id": "ec09e1cd-577d-4bfe-b1f3-4e951bd92348",
+          "dataType": "@sys.date",
+          "name": "date-from",
+          "value": "$date-from"
+        },
+        {
+          "id": "d22f922d-57a2-42b7-a60e-f1e98084d824",
+          "dataType": "@sys.date",
+          "name": "date-to",
+          "value": "$date-to"
+        },
+        {
+          "id": "aa443968-e2af-4443-b428-d0b119e604d2",
+          "dataType": "@recurrence",
+          "name": "recurrence-from",
+          "value": "$recurrence-from"
+        },
+        {
+          "id": "07aa21d5-f466-46ed-9130-a116d7943973",
+          "dataType": "@recurrence",
+          "name": "recurrence-to",
+          "value": "$recurrence-to"
+        },
+        {
+          "id": "35e74b94-f18a-40e8-8dc6-da419c81b503",
+          "dataType": "@sys.any",
+          "name": "song",
+          "value": "$song",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1504180146333,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "01236c2b-8db7-42c1-b785-2312da0fbb13",
+    "data": [
+      {
+        "text": "remove for 7 ",
+        "userDefined": false
+      },
+      {
+        "text": "am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f5bc8242-3985-4db9-b072-5b0431fdcefb",
+    "data": [
+      {
+        "text": "remove ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "alias": "all",
+        "meta": "@all",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "them",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ed2e648b-ef76-4737-979d-d579c1704d45",
+    "data": [
+      {
+        "text": "delete ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "alias": "all",
+        "meta": "@all",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "718db495-907e-43e5-a61d-35c32e929f69",
+    "data": [
+      {
+        "text": "the one for ",
+        "userDefined": false
+      },
+      {
+        "text": "Saturday",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " too",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "23e370b1-3d92-40b1-844c-6cb8a0224175",
+    "data": [
+      {
+        "text": "now the one for ",
+        "userDefined": false
+      },
+      {
+        "text": "9 pm",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f0ec2d60-adee-4d90-ae95-756d14fbc7d1",
+    "data": [
+      {
+        "text": "turn off ",
+        "userDefined": false
+      },
+      {
+        "text": "the one",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "every Sunday",
+        "alias": "recurrence",
+        "meta": "@recurrence",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1bf634d2-2210-4c92-809a-361e7a8e778a",
+    "data": [
+      {
+        "text": "erase",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "every Monday",
+        "alias": "recurrence",
+        "meta": "@recurrence",
+        "userDefined": true
+      },
+      {
+        "text": " too",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

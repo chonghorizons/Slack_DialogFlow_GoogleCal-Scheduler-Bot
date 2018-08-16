@@ -1,0 +1,44 @@
+{
+  "id": "6d26cb12-e19c-4fda-918e-8535b0b37982",
+  "name": "alarm.set - context:alarm - comment:recurrence",
+  "auto": true,
+  "contexts": [
+    "alarm"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "alarm.set",
+      "affectedContexts": [
+        {
+          "name": "alarm",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f5566658-1c7c-4d11-a79b-27af1c4adad4",
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1504180146207,
+  "fallbackIntent": false,
+  "events": []
+}

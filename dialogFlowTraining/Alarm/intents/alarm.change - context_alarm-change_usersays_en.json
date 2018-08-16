@@ -1,0 +1,199 @@
+[
+  {
+    "id": "955c56ab-2aa6-48c7-bf68-3f2f8d2ed961",
+    "data": [
+      {
+        "text": "from ",
+        "userDefined": false
+      },
+      {
+        "text": "Tuesday",
+        "alias": "date-from",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Monday",
+        "alias": "date-to",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff4106b4-88c1-4bd7-8ee8-b5c615002321",
+    "data": [
+      {
+        "text": "no the one on ",
+        "userDefined": false
+      },
+      {
+        "text": "Monday",
+        "alias": "date-from",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d834a3f6-f621-47e0-a1d0-4dd4356d75f6",
+    "data": [
+      {
+        "text": "to ",
+        "userDefined": false
+      },
+      {
+        "text": "10 am",
+        "alias": "time-to",
+        "meta": "@sys.time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cad49715-8857-4e21-8f66-1ca73dc7b564",
+    "data": [
+      {
+        "text": "no to ",
+        "userDefined": false
+      },
+      {
+        "text": "10 am",
+        "alias": "time-to",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "06e11e10-21f1-48f6-922a-407baa477a12",
+    "data": [
+      {
+        "text": "and from ",
+        "userDefined": false
+      },
+      {
+        "text": "10 am",
+        "alias": "time-from",
+        "meta": "@sys.time",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "9 am",
+        "alias": "time-to",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eeaf0dd6-2ac4-4745-b4cd-c75c7f1d7bbf",
+    "data": [
+      {
+        "text": "to",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Shape Of You",
+        "alias": "song",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cea99673-9185-427b-8946-a1f34e050327",
+    "data": [
+      {
+        "text": "to ",
+        "userDefined": false
+      },
+      {
+        "text": "every weekend",
+        "alias": "recurrence-to",
+        "meta": "@recurrence",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "12b604cb-11fa-4166-9f5d-a9deb18b8006",
+    "data": [
+      {
+        "text": "the one at ",
+        "userDefined": false
+      },
+      {
+        "text": "10 am",
+        "alias": "time-from",
+        "meta": "@sys.time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "da5e45e6-4a52-4522-a9a7-2c5e347adb7e",
+    "data": [
+      {
+        "text": "from ",
+        "userDefined": false
+      },
+      {
+        "text": "weekdays",
+        "alias": "recurrence-from",
+        "meta": "@recurrence",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "every day",
+        "alias": "recurrence-to",
+        "meta": "@recurrence",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

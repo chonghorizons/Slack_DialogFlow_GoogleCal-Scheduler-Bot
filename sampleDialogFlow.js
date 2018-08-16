@@ -12,7 +12,7 @@ if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
 
 
 // You can find your project ID in your Dialogflow agent settings
-const projectId = 'horhochobot'; //https://dialogflow.com/docs/agents#settings
+const projectId = 'kevhowbot'; //https://dialogflow.com/docs/agents#settings
 const sessionId = 'quickstart-session-id';
 const query = 'hello';
 const languageCode = 'en-US';
