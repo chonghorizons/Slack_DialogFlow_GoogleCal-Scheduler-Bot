@@ -1,0 +1,80 @@
+{
+  "id": "fcacd00c-cd50-4193-b77c-6bb6235bb5bd",
+  "name": "alarm.check",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.check",
+      "affectedContexts": [
+        {
+          "name": "alarm-check",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a4a8c946-3733-4168-b686-176086e87fc0",
+          "dataType": "@sys.any",
+          "name": "alarm-name",
+          "value": "$alarm-name"
+        },
+        {
+          "id": "0d7ce3f5-c747-4754-94b4-11a22e37b09b",
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time"
+        },
+        {
+          "id": "7b7b477c-f273-4f3d-ba48-94ab7e347bcc",
+          "dataType": "@sys.time-period",
+          "name": "time-period",
+          "value": "$time-period"
+        },
+        {
+          "id": "e1254eed-0062-4ecd-87e7-4e81202e763d",
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "id": "2d4b2edc-d9bb-47af-af2e-fb2426090a41",
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period"
+        },
+        {
+          "id": "199d091f-6b9f-4117-bdfb-1e729093b557",
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence",
+          "isList": false
+        },
+        {
+          "id": "ca0aec49-2f42-46da-921a-82be537e1714",
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1504180146363,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,92 @@
+{
+  "id": "4c033aee-6f91-41c8-90f9-29a931571eee",
+  "name": "reminder.set",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "reminder.set",
+      "affectedContexts": [
+        {
+          "name": "reminder",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "48d73b95-e94e-49ae-af24-3d91a6b44eee",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "reminder-name",
+          "value": "$reminder-name",
+          "isList": false
+        },
+        {
+          "id": "2db81159-761c-4319-9578-68b2bd9f8eee",
+          "required": false,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "isList": false
+        },
+        {
+          "id": "37bf97ef-d355-4234-aa4e-2abbce29deee",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "id": "dbf6e30b-8f77-4253-9603-2e7680db3eee",
+          "required": false,
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence",
+          "isList": false
+        },
+        {
+          "id": "5f92d086-5463-4ddb-857a-e3235c14feee",
+          "required": false,
+          "dataType": "@song",
+          "name": "song",
+          "value": "$song",
+          "isList": false
+        },
+        {
+          "id": "ea8e9eea-5c21-4d84-8ae7-93aa68c11eee",
+          "required": false,
+          "dataType": "@sys.music-artist",
+          "name": "artist",
+          "value": "$artist",
+          "isList": false
+        },
+        {
+          "id": "cf817d3f-b210-4e85-823e-ac4f97e61eee",
+          "required": false,
+          "dataType": "@sys.music-genre",
+          "name": "genre",
+          "value": "$genre",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1534199633,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "50bed2ca-2663-4942-92d0-10b080785ec0",
+  "name": "alarm.change",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.change",
+      "affectedContexts": [
+        {
+          "name": "alarm-change",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f290f89f-62db-43d6-b0c9-691372883d2e",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date-from",
+          "value": "$date-from",
+          "isList": false
+        },
+        {
+          "id": "99e20b46-23ed-41d9-8864-6eb4673a2d04",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date-to",
+          "value": "$date-to",
+          "isList": false
+        },
+        {
+          "id": "719d185b-fc31-4b45-9516-8c90f6f9f1e8",
+          "required": false,
+          "dataType": "@sys.time",
+          "name": "time-from",
+          "value": "$time-from",
+          "isList": false
+        },
+        {
+          "id": "4d108a5e-b5ed-48b0-9810-af0104c1f62f",
+          "required": false,
+          "dataType": "@sys.time",
+          "name": "time-to",
+          "value": "$time-to",
+          "isList": false
+        },
+        {
+          "id": "9436c7bf-2b6c-4b37-bf0d-d4e80196b820",
+          "required": false,
+          "dataType": "@recurrence",
+          "name": "recurrence-from",
+          "value": "$recurrence-from",
+          "isList": false
+        },
+        {
+          "id": "3af3dfd8-b6c7-48e4-ba55-3e7600ec45ad",
+          "required": false,
+          "dataType": "@recurrence",
+          "name": "recurrence-to",
+          "value": "$recurrence-to",
+          "isList": false
+        },
+        {
+          "id": "e1ae91ef-dbfe-4177-9c0c-f00ce9c1faf1",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "alarm-name",
+          "value": "$alarm-name",
+          "isList": false
+        },
+        {
+          "id": "5c0ebc39-f7d2-419a-8990-858066e7b70f",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "alarm-name-to",
+          "value": "$alarm-name-to",
+          "isList": false
+        },
+        {
+          "id": "380e9447-7ff5-4b42-840c-4921a86814b7",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "song",
+          "value": "$song",
+          "isList": true
+        },
+        {
+          "id": "1d7306bf-067f-4bcf-8ec2-5bbef46fb716",
+          "required": false,
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1504180146321,
+  "fallbackIntent": false,
+  "events": []
+}

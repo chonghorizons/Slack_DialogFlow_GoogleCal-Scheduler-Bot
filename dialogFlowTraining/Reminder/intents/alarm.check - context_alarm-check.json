@@ -1,0 +1,58 @@
+{
+  "id": "44d57b5c-b588-461d-b16b-adf53f615925",
+  "name": "alarm.check - context:alarm-check",
+  "auto": true,
+  "contexts": [
+    "alarm-check"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "alarm.check",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "dd39bf90-70e1-4e73-bab0-d931f31b93ad",
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "id": "6c476cab-c73f-4708-9d21-bb3f87c82f2c",
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "isList": false
+        },
+        {
+          "id": "db0d8cf2-d079-47b4-bbd8-7eddf2bd004e",
+          "dataType": "@recurrence",
+          "name": "recurrence",
+          "value": "$recurrence"
+        },
+        {
+          "id": "03eee6bb-1b57-419e-b5e6-6376893d5807",
+          "dataType": "@all",
+          "name": "all",
+          "value": "$all"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1504180146325,
+  "fallbackIntent": false,
+  "events": []
+}

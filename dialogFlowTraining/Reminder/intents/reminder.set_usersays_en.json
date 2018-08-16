@@ -1,0 +1,30 @@
+[
+  {
+    "id": "d1ab6804-8ec3-423a-9c54-b56bce293eee",
+    "data": [
+      {
+        "text": "I would like to set a reminder at ",
+        "userDefined": false
+      },
+      {
+        "text": "7 am",
+        "alias": "time",
+        "meta": "@sys.time",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "every weekend",
+        "alias": "recurrence",
+        "meta": "@recurrence",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
