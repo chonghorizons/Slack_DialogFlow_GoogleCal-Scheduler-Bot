@@ -1,5 +1,5 @@
 // https://github.com/dialogflow/dialogflow-fulfillment-nodejs#quick-start
-// Above is wrong... this is fulfillment model, which is about creating an IN route and OUT callback. Something like a message passing and webhook model.
+// Above is wrong... above is fulfillment model, which is about creating an IN route and OUT callback. Something like a message passing and webhook model.
 
 // The client based version is:
 // https://github.com/dialogflow/dialogflow-nodejs-client-v2#quickstart
@@ -14,7 +14,7 @@ if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
 // You can find your project ID in your Dialogflow agent settings
 const projectId = 'kevhowbot'; //https://dialogflow.com/docs/agents#settings
 const sessionId = 'quickstart-session-id';
-const query = 'hello';
+const query = 'remind me to brush my teeth on fridays';
 const languageCode = 'en-US';
 
 // Instantiate a DialogFlow client.
@@ -38,15 +38,25 @@ const request = {
 // Send request and log result
 sessionClient
   .detectIntent(request)
-  .then(responses => {
+  .then((responses) => {
     console.log('Detected intent');
     const result = responses[0].queryResult;
     console.log(`  Query: ${result.queryText}`);
     console.log(`  Response: ${result.fulfillmentText}`);
+    console.log('resultRaw', result);
     if (result.intent) {
       console.log(`  Intent: ${result.intent.displayName}`);
     } else {
       console.log(`  No intent matched.`);
+    }
+    if (result.parameters && result.parameters.fields) {
+      console.log(`  Paremeters.Fields: `);
+      Object.keys(result.parameters.fields).forEach((key) => {
+        console.log(`key *** ${key} *** has contents:`);
+        console.log(result.parameters.fields[key]);
+      })
+    } else {
+      console.log(`  No paremeter.fields matched.`);
     }
   })
   .catch(err => {
