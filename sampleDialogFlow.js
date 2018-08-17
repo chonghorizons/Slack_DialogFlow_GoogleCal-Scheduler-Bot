@@ -14,7 +14,6 @@ if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
 // You can find your project ID in your Dialogflow agent settings
 const projectId = 'kevhowbot'; //https://dialogflow.com/docs/agents#settings
 const sessionId = 'quickstart-session-id';
-const query = 'remind me to brush my teeth on fridays';
 const languageCode = 'en-US';
 
 // Instantiate a DialogFlow client.
@@ -24,41 +23,45 @@ const sessionClient = new dialogflow.SessionsClient();
 // Define session path
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
-// The text query request.
-const request = {
-  session: sessionPath,
-  queryInput: {
-    text: {
-      text: query,
-      languageCode: languageCode,
-    },
-  },
-};
 
+export default function queryDialogFlowPromise(query) {
+  const request = {
+    session: sessionPath,
+    queryInput: {
+      text: {
+        text: query,
+        languageCode: languageCode,
+      },
+    },
+  };
+
+  return sessionClient.detectIntent(request)
+}
+
+//SAMPLE
 // Send request and log result
-sessionClient
-  .detectIntent(request)
-  .then((responses) => {
-    console.log('Detected intent');
-    const result = responses[0].queryResult;
-    console.log(`  Query: ${result.queryText}`);
-    console.log(`  Response: ${result.fulfillmentText}`);
-    console.log('resultRaw', result);
-    if (result.intent) {
-      console.log(`  Intent: ${result.intent.displayName}`);
-    } else {
-      console.log(`  No intent matched.`);
-    }
-    if (result.parameters && result.parameters.fields) {
-      console.log(`  Paremeters.Fields: `);
-      Object.keys(result.parameters.fields).forEach((key) => {
-        console.log(`key *** ${key} *** has contents:`);
-        console.log(result.parameters.fields[key]);
-      })
-    } else {
-      console.log(`  No paremeter.fields matched.`);
-    }
-  })
-  .catch(err => {
-    console.error('ERROR:', err);
-  });
+queryDialogFlowPromise('remind me to brush my teeth on friday')
+.then((responses) => {
+  console.log('Response received for detect intent');
+  const result = responses[0].queryResult;
+  console.log(`  Query: ${result.queryText}`);
+  console.log(`  Response: ${result.fulfillmentText}`);
+  //console.log('resultRaw', result);
+  if (result.intent) {
+    console.log(`  Intent: ${result.intent.displayName}`);
+  } else {
+    console.log(`  No intent matched.`);
+  }
+  if (result.parameters && result.parameters.fields) {
+    console.log(`  Paremeters.Fields: `);
+    Object.keys(result.parameters.fields).forEach((key) => {
+      console.log(`key *** ${key} *** has contents:`);
+      console.log(result.parameters.fields[key]);
+    })
+  } else {
+    console.log(`  No paremeter.fields matched.`);
+  }
+})
+.catch(err => {
+  console.error('ERROR:', err);
+});
